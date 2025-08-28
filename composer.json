@@ -1,0 +1,16 @@
+{
+    "name": "willi/web-store",
+    "description": "loja online em php",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "core\\": "core/"
+        }
+    },
+    "authors": [
+        {
+            "name": "William Matias"
+        }
+    ],
+    "require": {}
+}
