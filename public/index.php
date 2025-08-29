@@ -14,4 +14,8 @@ require_once "../vendor/autoload.php";
 
 $pdo = new Database();
 
-$pdo->generic("TRUNCATE clientes");
+$pdo->insert("INSERT INTO clientes(nome)VALUES('pedro')");
+
+$clientes = $pdo->select("SELECT * FROM clientes");
+echo "<pre>";
+print_r($clientes);
