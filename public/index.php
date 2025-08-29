@@ -10,3 +10,8 @@ require_once "../config.php";
 
 // carregar classes
 require_once "../vendor/autoload.php";
+
+
+$pdo = new Database();
+
+$pdo->generic("TRUNCATE clientes");

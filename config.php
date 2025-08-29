@@ -1,5 +1,7 @@
 <?php
 
+use core\classes\Database;
+
 define("APP_NAME",      "WEB STORE");
 define("APP_VERSION",   "1.0.0");
 
@@ -8,3 +10,5 @@ define("SERVER",        "localhost");
 define("DATABASE",      "web_store");
 define("PASS",          "");
 define("USER",          "root");
+
+
