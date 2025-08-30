@@ -94,10 +94,9 @@ class Database
 
         // desconectar da base de dados
         $this->desligar();
-        
     }
 
-     // metodo de atualização sql
+    // metodo de atualização sql
     public function update($sql, $param = null)
     {
 
@@ -124,10 +123,9 @@ class Database
 
         // desconectar da base de dados
         $this->desligar();
-        
     }
 
-     // metodo de deleção sql
+    // metodo de deleção sql
     public function delete($sql, $param = null)
     {
 
@@ -154,9 +152,8 @@ class Database
 
         // desconectar da base de dados
         $this->desligar();
-        
     }
-       // verifica se é uma instrução diferente de crud
+    // verifica se é uma instrução diferente de crud
     public function generic($sql, $param = null)
     {
 
@@ -164,7 +161,7 @@ class Database
         if (preg_match("/^(SELECT|DELETE|UPDATE|INSERT)/i", $sql)) {
             throw new Exception("Não é uma instrução GENERICA");
         }
-          
+
 
         $this->ligar();
 
@@ -183,6 +180,5 @@ class Database
 
         // desconectar da base de dados
         $this->desligar();
-        
     }
 }
